@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>예측 결과</title>
+</head>
+<body>
+{% if True %}
+<img src="{{ url_for('static', filename= image_file )}}">
+{% endif %}
+<br>
+<div class="print">예측해보니 {{value}}네요!</div>
+
+<p>
+    <audio controls>
+        <source src="{{ url_for('static', filename = audio_file )}}" type="audio/mp3">
+    </audio>
+</p>
+
+<br>
+<a href="http://127.0.0.1:5000">처음으로 되돌아가기</a>
+
+</body>
+</html>
